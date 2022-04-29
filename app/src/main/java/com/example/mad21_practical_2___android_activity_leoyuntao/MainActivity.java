@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button buttonFollow = findViewById(R.id.button_follow);
         buttonFollow.setOnClickListener(view -> {
-            if (user.followed) {
+            if (!user.followed) {
                 buttonFollow.setText("UNFOLLOW");
             } else {
                 buttonFollow.setText("FOLLOW");
